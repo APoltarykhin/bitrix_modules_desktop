@@ -1,0 +1,413 @@
+.sb_block_news-top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bitrix24-default-theme .sb_gadget_title,
+.sb_block_news .sb_gadget_title {
+    text-align: left;
+
+    font-family: 'Open Sans', serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.sb_gadget_detail:hover {
+    background-color: #CFD4D8;
+    border-color: #CFD4D8;
+    color: #535C69;
+    text-decoration: none;
+}
+
+.sb_gadget_detail {
+    display: flex;
+    width: 38px;
+    height: 32px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4' viewBox='0 0 16 4'%3E%3Cpath fill='%23444D5B' fill-rule='evenodd' d='M6,10 C7.1045695,10 8,10.8954305 8,12 C8,13.1045695 7.1045695,14 6,14 C4.8954305,14 4,13.1045695 4,12 C4,10.8954305 4.8954305,10 6,10 Z M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z M18,10 C19.1045695,10 20,10.8954305 20,12 C20,13.1045695 19.1045695,14 18,14 C16.8954305,14 16,13.1045695 16,12 C16,10.8954305 16.8954305,10 18,10 Z' transform='translate(-4 -10)'/%3E%3C/svg%3E%0A") center no-repeat;
+    transition: 0.3s;
+    border: 1px solid #C8C8C9;
+    border-radius: 17px;
+}
+
+.sb_gadget_link_block {
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 19px 10px;
+}
+
+.sb_gadget_link_block .sb_gadget_link_row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.sb_responsible_user {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 10px 0 25px;
+}
+
+.sb_gadget_link_block .sb_pic {
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    /*border: 1px solid green;*/
+    background: #ffffff;
+    display: inline-block;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.sb_gadget_link_block a {
+    font: 13px/23px "OpenSans-SemiBold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #0055bf;
+    line-height: 1.3;
+
+}
+
+.sb_block_news .sb_gadget_detail a {
+    margin-top: 0px;
+}
+
+.size {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sb_right_block {
+    display: flex;
+    align-items: center;
+}
+
+.sb_name_news {
+    flex-grow: 1;
+    display: inline-block;
+    width: 75%;
+    overflow: hidden;
+}
+
+.sb_date_news {
+    display: inline-block;
+    width: 9%;
+    text-align: right;
+}
+
+
+.feed-time {
+    color: #828B95 !important;
+    font-size: 11px;
+    margin-right: 12px;
+    padding-left: 13px;
+}
+
+.sb_live {
+    background-color: #E23F72;
+    margin-left: 5px;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.glitch {
+    position: relative;
+    color: white;
+    letter-spacing: 0.06em;
+    /* Animation provies a slight random skew. Check bottom of doc
+    for more information on how to random skew. */
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+.glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    /* Creates an initial clip for our glitch. This works in
+    a typical top,right,bottom,left fashion and creates a mask
+    to only show a certain part of the glitch at a time. */
+    clip: rect(44px, 450px, 56px, 0);
+    /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+    with an alternating animation to keep things fresh. */
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+    0% {
+        clip: rect(85px, 9999px, 89px, 0);
+        transform: skew(0.24deg);
+    }
+    5% {
+        clip: rect(60px, 9999px, 29px, 0);
+        transform: skew(0.69deg);
+    }
+    10% {
+        clip: rect(5px, 9999px, 90px, 0);
+        transform: skew(0.61deg);
+    }
+    15% {
+        clip: rect(87px, 9999px, 63px, 0);
+        transform: skew(0.2deg);
+    }
+    20% {
+        clip: rect(83px, 9999px, 69px, 0);
+        transform: skew(0.43deg);
+    }
+    25% {
+        clip: rect(49px, 9999px, 26px, 0);
+        transform: skew(0.31deg);
+    }
+    30% {
+        clip: rect(85px, 9999px, 75px, 0);
+        transform: skew(0.99deg);
+    }
+    35% {
+        clip: rect(91px, 9999px, 56px, 0);
+        transform: skew(0.57deg);
+    }
+    40% {
+        clip: rect(43px, 9999px, 26px, 0);
+        transform: skew(0.74deg);
+    }
+    45% {
+        clip: rect(96px, 9999px, 2px, 0);
+        transform: skew(0.53deg);
+    }
+    50% {
+        clip: rect(39px, 9999px, 70px, 0);
+        transform: skew(0.85deg);
+    }
+    55% {
+        clip: rect(80px, 9999px, 84px, 0);
+        transform: skew(0.35deg);
+    }
+    60% {
+        clip: rect(68px, 9999px, 28px, 0);
+        transform: skew(0.19deg);
+    }
+    65% {
+        clip: rect(77px, 9999px, 74px, 0);
+        transform: skew(0.48deg);
+    }
+    70% {
+        clip: rect(96px, 9999px, 75px, 0);
+        transform: skew(0.38deg);
+    }
+    75% {
+        clip: rect(71px, 9999px, 20px, 0);
+        transform: skew(0.27deg);
+    }
+    80% {
+        clip: rect(35px, 9999px, 20px, 0);
+        transform: skew(0.37deg);
+    }
+    85% {
+        clip: rect(10px, 9999px, 62px, 0);
+        transform: skew(0.06deg);
+    }
+    90% {
+        clip: rect(28px, 9999px, 36px, 0);
+        transform: skew(0.6deg);
+    }
+    95% {
+        clip: rect(75px, 9999px, 13px, 0);
+        transform: skew(0.41deg);
+    }
+    100% {
+        clip: rect(58px, 9999px, 34px, 0);
+        transform: skew(0.17deg);
+    }
+}
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(79px, 9999px, 11px, 0);
+        transform: skew(0.15deg);
+    }
+    5% {
+        clip: rect(36px, 9999px, 76px, 0);
+        transform: skew(0.23deg);
+    }
+    10% {
+        clip: rect(83px, 9999px, 92px, 0);
+        transform: skew(0.97deg);
+    }
+    15% {
+        clip: rect(33px, 9999px, 87px, 0);
+        transform: skew(0.16deg);
+    }
+    20% {
+        clip: rect(47px, 9999px, 84px, 0);
+        transform: skew(0.02deg);
+    }
+    25% {
+        clip: rect(100px, 9999px, 49px, 0);
+        transform: skew(0.63deg);
+    }
+    30% {
+        clip: rect(21px, 9999px, 36px, 0);
+        transform: skew(0.83deg);
+    }
+    35% {
+        clip: rect(65px, 9999px, 72px, 0);
+        transform: skew(0.53deg);
+    }
+    40% {
+        clip: rect(65px, 9999px, 34px, 0);
+        transform: skew(0.53deg);
+    }
+    45% {
+        clip: rect(43px, 9999px, 18px, 0);
+        transform: skew(0.25deg);
+    }
+    50% {
+        clip: rect(65px, 9999px, 63px, 0);
+        transform: skew(0.6deg);
+    }
+    55% {
+        clip: rect(29px, 9999px, 30px, 0);
+        transform: skew(0.39deg);
+    }
+    60% {
+        clip: rect(28px, 9999px, 88px, 0);
+        transform: skew(0.7deg);
+    }
+    65% {
+        clip: rect(51px, 9999px, 34px, 0);
+        transform: skew(0.04deg);
+    }
+    70% {
+        clip: rect(93px, 9999px, 86px, 0);
+        transform: skew(0.7deg);
+    }
+    75% {
+        clip: rect(68px, 9999px, 9px, 0);
+        transform: skew(0.65deg);
+    }
+    80% {
+        clip: rect(3px, 9999px, 98px, 0);
+        transform: skew(0.96deg);
+    }
+    85% {
+        clip: rect(58px, 9999px, 79px, 0);
+        transform: skew(0.4deg);
+    }
+    90% {
+        clip: rect(41px, 9999px, 36px, 0);
+        transform: skew(0.05deg);
+    }
+    95% {
+        clip: rect(97px, 9999px, 34px, 0);
+        transform: skew(0.14deg);
+    }
+    100% {
+        clip: rect(72px, 9999px, 36px, 0);
+        transform: skew(0.43deg);
+    }
+}
+@keyframes glitch-skew {
+    0% {
+        transform: skew(0deg);
+    }
+    10% {
+        transform: skew(3deg);
+    }
+    20% {
+        transform: skew(2deg);
+    }
+    30% {
+        transform: skew(2deg);
+    }
+    40% {
+        transform: skew(2deg);
+    }
+    50% {
+        transform: skew(3deg);
+    }
+    60% {
+        transform: skew(3deg);
+    }
+    70% {
+        transform: skew(0deg);
+    }
+    80% {
+        transform: skew(-2deg);
+    }
+    90% {
+        transform: skew(-3deg);
+    }
+    100% {
+        transform: skew(1deg);
+    }
+}
+
+.sb_fire {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: uppercase;
+    /* identical to box height, or 109% */
+    letter-spacing: 0.06em;
+    display: block;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(/local/components/sb/desktop/templates/.default/include/sb_news/img/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: padding-box;
+    /* Animate Background Image */
+    /*-webkit-text-fill-color: #e96f3ac9;*/
+    -webkit-animation: aitf 40s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}

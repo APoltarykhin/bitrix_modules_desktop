@@ -1,0 +1,63 @@
+.birthday-container {
+    font-family: "Open Sans", sans-serif;
+    border-collapse: separate;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.birthday-container .widget-birthdays {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.birthday-container .widget-birthdays .widget-top {
+    background-color: #2fc6f6;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.birthday-container .widget-top-title {
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.birthday-container .widget-body--empty {
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.birthday-container .widget-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #ffffff;
+
+    border-collapse: separate;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.birthday-container .widget-body__item {
+    padding: 14px 17px;
+}
+
+.birthday-container .widget-body__item:hover {
+    background-color: #f8f9fa;
+}
+
+.birthday-container .widget-body__item .sidebar-user-info .user-birth-date {
+    font-size: 12px;
+    color: #d58f06;
+}
+
+.birthday-container .widget-body__item .sidebar-user-info {
+    display: flex;
+    flex-direction: column;
+}

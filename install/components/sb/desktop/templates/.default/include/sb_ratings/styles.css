@@ -1,0 +1,107 @@
+.sb_block_rating-top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sb_rating_item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: #D7EFF9;
+    padding: 5px 15px;
+    margin-top: 5px;
+    color: #545C6A;
+    border-radius: 10px;
+}
+
+.sb_rating_item__position {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3CC7F4;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.sb_rating_item__info {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    width: 27%;
+    padding-right: 15px;
+}
+
+.sb_rating_item__info--avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0;
+    position: relative;
+    flex-shrink: 0;
+    background-size: 27px;
+    background: #eee url('/local/components/1cbit/ratings.detail.list/templates/.default/images/department.svg') no-repeat center center;
+}
+
+.sb_rating_item__info--name {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #545C6A;
+    font-weight: bold;
+}
+
+.sb_rating_item__progress_wrapper {
+    width: 70%;
+}
+
+.sb_rating_item__progress {
+    height: 25px;
+    background: #fff;
+    border: 1px solid #D8D8D8;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sb_rating_item__progress--line {
+    background: #68D0DD;
+    width: 0;
+    height: 100%;
+}
+
+.sb_rating_item__progress--text {
+    z-index: 1;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.gold_medal, .silver_medal, .bronze_medal {
+    position: absolute;
+    width: 17px;
+    height: 20px;
+    bottom: -5px;
+    right: 0;
+}
+
+.gold_medal {
+    background-image: url('/local/components/1cbit/ratings.detail.list/templates/.default/images/gold_medal.png');
+}
+
+.silver_medal {
+    background-image: url('/local/components/1cbit/ratings.detail.list/templates/.default/images/silver_medal.png');
+}
+
+.bronze_medal {
+    background-image: url('/local/components/1cbit/ratings.detail.list/templates/.default/images/bronze_medal.png');
+}

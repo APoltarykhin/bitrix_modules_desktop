@@ -1,0 +1,76 @@
+.calendar-container {
+    font-family: "Open Sans", sans-serif;
+    border-collapse: separate;
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.calendar-container .widget-birthdays {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.calendar-container .widget-birthdays .widget-top {
+    background-color: #2fc6f6;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.calendar-container .widget-top-title {
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.calendar-container .widget-body--empty {
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.calendar-container .widget-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #ffffff;
+
+    border-collapse: separate;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.calendar-container .widget-body__item {
+    padding: 14px 17px;
+    flex-grow: 1;
+    color: #423F3F;
+}
+
+.calendar-container .widget-body__item:hover {
+    background-color: #f8f9fa;
+    color: #423F3F;
+}
+
+.calendar-container .widget-body__item .sidebar-event-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-container .widget-body__item .event-date {
+    color: #5C5A5A;
+    background-color: #DFE3E7;
+    border-radius: 17px;
+    padding: 3px 14px;
+}
+
+.calendar-container .widget-body__item .event-date.event-date--green {
+    color: #FFFFFF;
+    background-color: #93C900;
+}
